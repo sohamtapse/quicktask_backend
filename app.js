@@ -9,7 +9,7 @@ const PORT = 3000;
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173", // <-- your frontend URL
+    origin: "https://quicktask-frontend-omega.vercel.app", // <-- your frontend URL
     credentials: true, // <-- allow cookies/auth headers
   })
 );
