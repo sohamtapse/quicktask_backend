@@ -1,11 +1,13 @@
 import express from "express";
 import taskRoutes from "./routes/route.js";
 import connect from "./db/db.js";
+import cors from "cors";
 connect();
 const app = express();
 const PORT = 3000;
 
 app.use(express.json());
+app.use(cors());
 
 app.use("/tasks", taskRoutes);
 
